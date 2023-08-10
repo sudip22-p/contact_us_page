@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.upper-detail{
+    max-width:80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+}
+.upper-detail h3{
+    font-size: 30px;
+}
+.lower-detail{
+    display: grid;
+    min-height: 70vh;
+    width: 70vw;
+    grid-template-columns:1.75fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+.left-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    margin-top: 10px;
+}
+.left-sec span.icon{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.left-sec span.icon i.fa{
+    color: rgb(30, 181, 219);
+    position: relative;
+    bottom: 15px;
+    border: 2px solid grey;
+    padding: 5px;
+}
+.left-sec span.icon h3{
+    font-size: 24px;
+}
+.minor-detail{
+    margin-left: 30px;
+}
+.left-sec span{
+    font-size: 18px;
+    position: relative;
+    left: 10px;
+}
+.social-links ul{
+    display: flex;
+    list-style: none;
+}
+.social-links ul li a i.fa{
+    color: rgb(73 110 223);
+}
+.right-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 22vw;
+    background-color: white;
+    padding: 30px 3vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 30px rgb(50, 49, 53);
+}
+.right-box form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    padding: 40px 5vw;
+    font-size: 18px;
+}
+.right-box h3{
+    font-size: 24px;
+    color: rgb(10, 243, 10);
+}
+.right-box form input{
+    margin-bottom: 50px;
+    margin-top: -27px;
+    width: 25vw;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid grey;
+}
+.right-box form div.pre-text{
+    z-index: 2;
+}
+.right-box form input.submit-btn{
+    margin-bottom: -20px;
+    margin-top: 20px;
+    height: 30px;
+    border-radius: 20px;
+    color: rgb(10, 243, 10);
+    background-color: rgb(65, 131, 231);
+    font-weight: bold;
+    font-size: 20px;
+    width: 15vw;
+    border: none;
+}
+.right-box form input.submit-btn:hover{
+    color: rgb(58, 133, 231);
+    transform:scale(1.1);
+    background-color: rgb(99, 238, 71);;
+    transition: 2s;
+}
+.right-box form input:focus{
+    border-bottom: 2px solid #e91e63;
+    outline: none;
+    transition: 1s;
+}
+.right-box form input:valid{
+    border-bottom: 2px solid #2ee94d;
+    outline: none;
+}
+.right-box form input.submit-btn:valid{
+    border-bottom: none;
+}
+@media (max-width:1075px) 
+{
+    .right-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 28vw;
+        background-color: white;
+        padding: 30px 3vw;
+        border-radius: 10px;
+        box-shadow: 5px 5px 30px rgb(50, 49, 53);
+    }
+    .left-sec span.icon h3{
+        font-size: 20px;
+    }
+    .minor-detail{
+        margin-left: 10px;
+    }
+    .social-links ul li{
+        margin-right: 10px;
+    }
+}
+@media (max-width:721px) 
+{
+    .lower-detail{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .right-box{
+        width: 80%;
+    }
+    .right-box form{
+        font-size: 16px;
+    }
+    .right-box h3{
+        font-size: 21px;
+    }
+    .right-box form input{
+        width: 45vw;
+        height: 35px;
+        font-size: 16px;
+    }
+    .right-box form input.submit-btn{
+        font-size: 18px;
+        width: 22vw;
+    }
+}
+@media (max-width:353px) 
+{
+    
+    .right-box{
+        width: 95%;
+    }
+    .right-box form{
+        font-size: 14px;
+    }
+    .right-box h3{
+        font-size: 18px;
+    }
+    .right-box form input{
+        width: 55vw;
+        height: 35px;
+        font-size: 14px;
+    }
+    .right-box form input.submit-btn{
+        font-size: 15px;
+        width: 27vw;
+    }
+}
