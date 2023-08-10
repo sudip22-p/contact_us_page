@@ -168,7 +168,7 @@ body{
         grid-template-columns:repeat(1,1fr);
     }
     .right-box{
-        width: 90%;
+        width: 95vw;
     }
     .right-box form{
         font-size: 16px;
@@ -177,7 +177,7 @@ body{
         font-size: 21px;
     }
     .right-box form input{
-        width: 45vw;
+        width: 55vw;
         height: 35px;
         font-size: 16px;
     }
