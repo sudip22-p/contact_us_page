@@ -146,7 +146,7 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-width: 28vw;
+        min-width: 30vw;
         background-color: white;
         padding: 30px 3vw;
         border-radius: 10px;
@@ -168,7 +168,7 @@ body{
         grid-template-columns:repeat(1,1fr);
     }
     .right-box{
-        width: 80%;
+        width: 90%;
     }
     .right-box form{
         font-size: 16px;
@@ -190,7 +190,7 @@ body{
 {
     
     .right-box{
-        width: 95%;
+        width: 97%;
     }
     .right-box form{
         font-size: 14px;
